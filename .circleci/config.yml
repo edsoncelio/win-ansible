@@ -4,7 +4,7 @@
         environment:
           IMAGE_NAME: tuxpilgrim/win-ansible
         docker:
-          - image: ubuntu:18.04
+          - image: circleci/buildpack-deps:stretch
         steps:
           - checkout
           - setup_remote_docker
